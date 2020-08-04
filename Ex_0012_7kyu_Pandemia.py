@@ -1,5 +1,5 @@
 def infected(s):
-    list_of_countries = s.split('X')
+    list_of_countries = s.split_and_add('X')
     return list_of_countries
 
 if __name__ == '__main__':

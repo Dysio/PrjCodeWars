@@ -1,7 +1,7 @@
 def meeting(s):
     person_list = []
-    for element in s.split(';'):
-        person_list += [element.split(':')]
+    for element in s.split_and_add(';'):
+        person_list += [element.split_and_add(':')]
 
     person_list_2 = []
     for i in range(0,len(person_list)):

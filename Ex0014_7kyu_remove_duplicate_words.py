@@ -1,5 +1,5 @@
 def remove_duplicate_words(s):
-    list_of_words = s.split()
+    list_of_words = s.split_and_add()
     list_removed_duplicates = []
     for word in list_of_words:
         if word not in list_removed_duplicates:

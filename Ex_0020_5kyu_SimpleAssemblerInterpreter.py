@@ -1,7 +1,7 @@
 def simple_assembler(program):
 	# return a dictionary with the registers
-    reg_name = program[0].split()[1]
-    reg_val = program[0].split()[2]
+    reg_name = program[0].split_and_add()[1]
+    reg_val = program[0].split_and_add()[2]
 
     index = 1
     # while index < len(program):

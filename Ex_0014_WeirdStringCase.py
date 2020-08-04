@@ -1,5 +1,5 @@
 def to_weird_case(string):
-    list_of_words = string.split()
+    list_of_words = string.split_and_add()
     new_list_of_words = []
     for word in list_of_words:
         i = 0

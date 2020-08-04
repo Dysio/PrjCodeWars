@@ -2,7 +2,7 @@ def generate_hashtag(s):
     if s == '':
         return False
 
-    sentence = ''.join([word.capitalize() for word in s.split()])
+    sentence = ''.join([word.capitalize() for word in s.split_and_add()])
 
     if len(sentence) > 140:
         return False
