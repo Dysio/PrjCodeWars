@@ -26,7 +26,7 @@ if __name__ == '__main__':
         assert result == element['expected']
 
     # dic = dict_invert({1: 10, 2: 20, 3: 30})
-    # dic = dict_invert({1: 10, 2: 20, 3: 30, 4: 30})
+    dic = dict_invert({1: 10, 2: 20, 3: 30, 4: 30})
     # dic = {1: 10, 2: 20, 3: 30}
     # dic[1] = []
     # dic[1].append(10)
@@ -34,3 +34,4 @@ if __name__ == '__main__':
     # dic[1].append(13)
     # print(dic[1])
     # print(dic)
+
