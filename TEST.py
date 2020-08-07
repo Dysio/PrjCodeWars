@@ -1,9 +1,18 @@
-def pattern(n):
-    # for number in range(n):
-    #     print(n - number)
-    # print(''.join[number for number in range(n,0,-1)])
-    pass
+def closest_power(base, num):
+    exp = 0
+    exp_result = 0
+    while base ** exp < num:
+        if num - base ** exp < base ** (exp+1) - num:
+            exp_result = exp
+        if num - base ** exp > base ** (exp + 1) - num:
+            exp_result = exp + 1
+        exp += 1
+
+    return exp_result
+
 
 if __name__ == '__main__':
-    pattern(5)
-    lista = [number for number in range(10)]
+    assert closest_power(4, 12) == 2
+    assert closest_power(3, 12) == 2
+    assert closest_power(4, 1) == 0
+
