@@ -11,12 +11,16 @@ def deep_reverse(L):
     # L = [L[-1-elem][-1::-1] for elem in [i for i in range(len(L))]]
     # return L
 
+    # def deep_reverse(L)
+    # for index, element in enumerate(L):
+    #     L[index] = element[::-1]
+    # L.reverse()
+
     length = len(L)
     for i in range(length):
         L.append(L[length - 1 - i][-1::-1])
     for i in range(length):
         L.pop(0)
-
 
 
 if __name__ == '__main__':

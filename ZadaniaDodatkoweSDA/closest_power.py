@@ -15,12 +15,9 @@ def closest_power(base, num):
             exp_result = exponent
         elif (num - base**exponent) > (base**(exponent+1) - num):
             exp_result = exponent + 1
-        exponent = exponent + 1
+        exponent += 1
 
     return exp_result
-
-
-
 
 if __name__ == '__main__':
     assert closest_power(4, 12) == 2

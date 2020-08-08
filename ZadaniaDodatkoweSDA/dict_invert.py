@@ -14,6 +14,16 @@ def dict_invert(d):
 
     return dic
 
+
+def dict_invert2(d):
+    for key, value in d.items():
+        try:
+            result[value].append(key)
+        except KeyError:
+            result.update({'value': [key]})
+
+        result[value].sort()
+
 if __name__ == '__main__':
     e = [
         {'given': {1: 10, 2: 20, 3: 30}, 'expected': {10: [1], 20: [2], 30: [3]}},
