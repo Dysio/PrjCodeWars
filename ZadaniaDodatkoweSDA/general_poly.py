@@ -14,6 +14,15 @@ def general_poly(L):
         return sum
     return function
 
+def general_poly2(L):
+    def calculate(x):
+        result = 0
+        for n,k in zip(L, range(len(L) - 1, -1, -1)):
+            result += n * x ** k
+        return result
+
+    return calculate
+
 if __name__ == '__main__':
     assert general_poly([1, 2, 3, 4])(10) == 1234
     assert general_poly([1, 2, 3, 4, 5])(10) == 12345
