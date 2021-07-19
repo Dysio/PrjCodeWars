@@ -1,0 +1,1 @@
+###Code from CodeWars tasks
